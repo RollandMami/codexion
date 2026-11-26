@@ -7,10 +7,10 @@ BIN = $(BUILD)/bin
 NAME = $(BIN)/codexion
 OBJDIR = $(BUILD)/obj
 
-SRC = main.c \
-	  src/parse_input.c \
-	  src/parse_utils.c \
-	  src/coders.c
+SRC = src/main.c \
+	  src/core/parse_input.c \
+	  src/core/parse_utils.c \
+	  src/core/coders.c
 
 OBJ = $(SRC:%.c=$(OBJDIR)/%.o)
 

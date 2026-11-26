@@ -6,25 +6,14 @@
 /*   By: mamiandr <mamiandr@student.42antananarivo.#+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
 /*   Created: 2026/11/23 05:36:30 by mamiandr         #+#    #+#              */
-/*   Updated: 2026/11/23 09:20:28 by mamiandr        ###   ########.fr        */
+/*   Updated: 2026/11/26 11:58:26 by mamiandr        ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef MAIN_H
 # define MAIN_H
 # include <pthread.h>
-
-typedef struct s_Params
-{
-	int		number_of_coders;
-	int		time_to_burnout;
-	int		time_to_compile;
-	int		time_to_debug;
-	int		time_to_refactor;
-	int		number_of_compiles_required;
-	int		dongle_cooldown;
-	char	*scheduler;
-}	t_Params;
+# include "core/core.h"
 
 typedef struct s_Coder
 {
