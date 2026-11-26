@@ -9,7 +9,6 @@ OBJDIR = $(BUILD)/obj
 
 SRC = src/main.c \
 	  src/core/parse_input.c \
-	  src/core/parse_utils.c \
 	  src/core/coders.c
 
 OBJ = $(SRC:%.c=$(OBJDIR)/%.o)

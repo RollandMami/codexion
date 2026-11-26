@@ -6,7 +6,7 @@
 /*   By: mamiandr <mamiandr@student.42antananarivo.#+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
 /*   Created: 2026/11/26 11:17:48 by mamiandr         #+#    #+#              */
-/*   Updated: 2026/11/26 11:59:39 by mamiandr        ###   ########.fr        */
+/*   Updated: 2026/11/26 12:16:41 by mamiandr        ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,6 +54,7 @@ int	check_args(char **argv, t_Params *params)
 		printf("[ERROR] Strategy must be edf or fifo: %s\n", argv[8]);
 		return (1);
 	}
+	params->scheduler = NULL;
 	params->scheduler = strdup(argv[8]);
 	return (check_positive_integer(params));
 }
